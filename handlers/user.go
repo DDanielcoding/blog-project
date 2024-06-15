@@ -4,6 +4,7 @@ import (
 	"blog-project/db"
 	"blog-project/models"
 	"net/http"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -30,4 +31,14 @@ func GetUser(c *gin.Context) {
 		return
 	}
 	c.JSON(http.StatusOK, user)
+}
+
+func GetAllUsers(c *gin.Context) {
+	var users []models.User
+	if err := db.DB.Find(&users).Error; err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
+
+	c.JSON(http.StatusOK, users)
 }
