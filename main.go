@@ -15,6 +15,10 @@ func main() {
 	r.POST("/users", handlers.CreateUser)
 	r.GET("/users/:id", handlers.GetUser)
 
+	r.POST("/blog_entries", handlers.CreateBlogEntry)
+	r.GET("/blog_entries/:id", handlers.GetBlogEntry)
+	r.GET("/blog_entries", handlers.GetAllBlogEntries)
+
 	authorized := r.Group("/")
 	authorized.Use(middleware.AuthMiddleware())
 	{
