@@ -1,0 +1,4 @@
+[36mINFO[0m[2024-06-16T13:00:36+02:00]/home/ddaniel/blog-project/db/connection.go:21 blog-project/db.Connect() Database connected successfully!             
+[36mINFO[0m[2024-06-16T13:00:36+02:00]/home/ddaniel/blog-project/db/connection.go:28 blog-project/db.Connect() Database migration completed successfully    
+[36mINFO[0m[2024-06-16T13:01:21+02:00]/home/ddaniel/blog-project/handlers/user.go:25 blog-project/handlers.CreateUser() User created: {10 logrustest2 logrustest2@example.com logrustest2} 
+[36mINFO[0m[2024-06-16T13:02:01+02:00]/home/ddaniel/blog-project/handlers/user.go:37 blog-project/handlers.GetUser() User retrieved: {10 logrustest2 logrustest2@example.com logrustest2} 
