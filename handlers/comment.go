@@ -1,5 +1,3 @@
-// handlers/comment.go
-
 package handlers
 
 import (
