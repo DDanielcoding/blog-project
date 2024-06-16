@@ -32,12 +32,15 @@ func main() {
 
 	r.POST("/users", handlers.CreateUser)
 	r.GET("/users/:id", handlers.GetUser)
+	r.GET("/users", handlers.GetAllUsers)
 
 	r.POST("/login", handlers.Login)
 
 	r.POST("/blog_entries", handlers.CreateBlogEntry)
 	r.GET("/blog_entries/:id", handlers.GetBlogEntry)
 	r.GET("/blog_entries", handlers.GetAllBlogEntries)
+
+	r.GET("/comments", handlers.GetAllComments)
 
 	authorized := r.Group("/")
 	authorized.Use(middleware.JWTAuthMiddleware())

@@ -1,4 +1,2 @@
-[36mINFO[0m[2024-06-16T14:42:10+02:00]/home/ddaniel/blog-project/db/connection.go:21 blog-project/db.Connect() Database connected successfully!             
-[36mINFO[0m[2024-06-16T14:42:10+02:00]/home/ddaniel/blog-project/db/connection.go:28 blog-project/db.Connect() Database migration completed successfully    
-[36mINFO[0m[2024-06-16T14:44:21+02:00]/home/ddaniel/blog-project/handlers/comment.go:58 blog-project/handlers.GetCommentsByBlogID() Comments retrieved successfully for blog entry ID:  
-[36mINFO[0m[2024-06-16T14:46:29+02:00]/home/ddaniel/blog-project/handlers/comment.go:27 blog-project/handlers.CreateComment() Comment created successfully for blog entry ID: 6 
+[36mINFO[0m[2024-06-16T19:37:33+02:00]/home/ddaniel/blog-project/db/connection.go:21 blog-project/db.Connect() Database connected successfully!             
+[36mINFO[0m[2024-06-16T19:37:33+02:00]/home/ddaniel/blog-project/db/connection.go:28 blog-project/db.Connect() Database migration completed successfully    
