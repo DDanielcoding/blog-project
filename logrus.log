@@ -1,4 +1,13 @@
-[36mINFO[0m[2024-06-16T13:00:36+02:00]/home/ddaniel/blog-project/db/connection.go:21 blog-project/db.Connect() Database connected successfully!             
-[36mINFO[0m[2024-06-16T13:00:36+02:00]/home/ddaniel/blog-project/db/connection.go:28 blog-project/db.Connect() Database migration completed successfully    
-[36mINFO[0m[2024-06-16T13:01:21+02:00]/home/ddaniel/blog-project/handlers/user.go:25 blog-project/handlers.CreateUser() User created: {10 logrustest2 logrustest2@example.com logrustest2} 
-[36mINFO[0m[2024-06-16T13:02:01+02:00]/home/ddaniel/blog-project/handlers/user.go:37 blog-project/handlers.GetUser() User retrieved: {10 logrustest2 logrustest2@example.com logrustest2} 
+[36mINFO[0m[2024-06-16T13:36:47+02:00]/home/ddaniel/blog-project/db/connection.go:21 blog-project/db.Connect() Database connected successfully!             
+[36mINFO[0m[2024-06-16T13:36:47+02:00]/home/ddaniel/blog-project/db/connection.go:28 blog-project/db.Connect() Database migration completed successfully    
+[36mINFO[0m[2024-06-16T13:37:12+02:00]/home/ddaniel/blog-project/handlers/user.go:37 blog-project/handlers.GetUser() User retrieved: {1 testuser test@example.com password} 
+[36mINFO[0m[2024-06-16T13:37:19+02:00]/home/ddaniel/blog-project/handlers/user.go:37 blog-project/handlers.GetUser() User retrieved: {1 testuser test@example.com password} 
+[36mINFO[0m[2024-06-16T13:38:47+02:00]/home/ddaniel/blog-project/handlers/user.go:37 blog-project/handlers.GetUser() User retrieved: {1 testuser test@example.com password} 
+[36mINFO[0m[2024-06-16T13:38:47+02:00]/home/ddaniel/blog-project/handlers/user.go:37 blog-project/handlers.GetUser() User retrieved: {10 logrustest2 logrustest2@example.com logrustest2} 
+[36mINFO[0m[2024-06-16T13:39:06+02:00]/home/ddaniel/blog-project/handlers/login.go:19 blog-project/handlers.Login() Login attempt started                        
+[36mINFO[0m[2024-06-16T13:39:06+02:00]/home/ddaniel/blog-project/handlers/login.go:27 blog-project/handlers.Login() Login data received: %v{logrustest2@example.com randompw} 
+[33mWARN[0m[2024-06-16T13:39:06+02:00]/home/ddaniel/blog-project/handlers/login.go:37 blog-project/handlers.Login() Invalid password for email: logrustest2@example.com 
+[36mINFO[0m[2024-06-16T13:39:41+02:00]/home/ddaniel/blog-project/handlers/login.go:19 blog-project/handlers.Login() Login attempt started                        
+[36mINFO[0m[2024-06-16T13:39:41+02:00]/home/ddaniel/blog-project/handlers/login.go:27 blog-project/handlers.Login() Login data received: %v{logrustest2@example.com logrustest2} 
+[36mINFO[0m[2024-06-16T13:39:41+02:00]/home/ddaniel/blog-project/handlers/login.go:49 blog-project/handlers.Login() Token generated successfully for user ID: 10 
+[36mINFO[0m[2024-06-16T13:39:41+02:00]/home/ddaniel/blog-project/handlers/login.go:52 blog-project/handlers.Login() Login attempt successful                     
