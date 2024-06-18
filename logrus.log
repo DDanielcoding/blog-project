@@ -1,2 +1,11 @@
-[36mINFO[0m[2024-06-16T21:47:37+02:00]/home/ddaniel/blog-project/db/connection.go:21 blog-project/db.Connect() Database connected successfully!             
-[36mINFO[0m[2024-06-16T21:47:37+02:00]/home/ddaniel/blog-project/db/connection.go:28 blog-project/db.Connect() Database migration completed successfully    
+[36mINFO[0m[2024-06-17T22:09:34+02:00]/home/ddaniel/blog-project/db/connection.go:21 blog-project/db.Connect() Database connected successfully!             
+[36mINFO[0m[2024-06-17T22:09:34+02:00]/home/ddaniel/blog-project/db/connection.go:28 blog-project/db.Connect() Database migration completed successfully    
+[36mINFO[0m[2024-06-17T22:09:55+02:00]/home/ddaniel/blog-project/handlers/user.go:25 blog-project/handlers.CreateUser() User created: {2 testuser2 test1234@example.com password123} 
+[36mINFO[0m[2024-06-17T22:10:00+02:00]/home/ddaniel/blog-project/handlers/user.go:48 blog-project/handlers.GetAllUsers() Users retrieved: 2 users                     
+[36mINFO[0m[2024-06-17T22:12:16+02:00]/home/ddaniel/blog-project/handlers/login.go:19 blog-project/handlers.Login() Login attempt started                        
+[36mINFO[0m[2024-06-17T22:12:16+02:00]/home/ddaniel/blog-project/handlers/login.go:27 blog-project/handlers.Login() Login data received: %v{test1234@example.com password123} 
+[36mINFO[0m[2024-06-17T22:12:16+02:00]/home/ddaniel/blog-project/handlers/login.go:49 blog-project/handlers.Login() Token generated successfully for user ID: 2  
+[36mINFO[0m[2024-06-17T22:12:16+02:00]/home/ddaniel/blog-project/handlers/login.go:52 blog-project/handlers.Login() Login attempt successful                     
+[36mINFO[0m[2024-06-17T22:18:53+02:00]/home/ddaniel/blog-project/handlers/comment.go:71 blog-project/handlers.GetAllComments() Retrieved all comments: [{1  1 1 Test comment 2024-06-16 21:07:36.908683329 +0200 +0200} {2  0 0 This is a test comment by testuser 2024-06-16 21:10:35.529908406 +0200 +0200}] 
+[36mINFO[0m[2024-06-17T22:29:16+02:00]/home/ddaniel/blog-project/handlers/comment.go:27 blog-project/handlers.CreateComment() Comment created successfully for blog entry ID: 2 
+[36mINFO[0m[2024-06-17T22:29:26+02:00]/home/ddaniel/blog-project/handlers/comment.go:71 blog-project/handlers.GetAllComments() Retrieved all comments: [{1  1 1 Test comment 2024-06-16 21:07:36.908683329 +0200 +0200} {2  0 0 This is a test comment by testuser 2024-06-16 21:10:35.529908406 +0200 +0200} {3 testuser2 2 2 Test comment 2024-06-17 22:29:16.739505606 +0200 +0200}] 

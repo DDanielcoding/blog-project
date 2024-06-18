@@ -1,0 +1,2 @@
+[36mINFO[0m[2024-06-18T17:52:13+02:00]/home/ddaniel/blog-project/db/connection.go:21 blog-project/db.Connect() Database connected successfully!             
+[36mINFO[0m[2024-06-18T17:52:13+02:00]/home/ddaniel/blog-project/db/connection.go:28 blog-project/db.Connect() Database migration completed successfully    
