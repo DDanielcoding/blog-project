@@ -24,11 +24,12 @@ func GenerateToken(userID uint) (string, error) {
 			ExpiresAt: expirationTime.Unix(),
 		},
 	}
-
+	
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
 	return token.SignedString(jwtKey)
 }
 
+// To validate JWT tokens in incoming requests.
 func JWTAuthMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		authHeader := c.GetHeader("Authorization")
