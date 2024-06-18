@@ -15,7 +15,8 @@ func AuthMiddleware() gin.HandlerFunc {
 			c.Abort()
 			return
 		}
-		if token != "Bearer mysecrettoken" { // Replace with your actual token check logic
+		// If the token does not match the expected value it gives an error.
+		if token != "Bearer mysecrettoken" {
 			c.JSON(http.StatusUnauthorized, gin.H{"error": "Unauthorized"})
 			c.Abort()
 			return
