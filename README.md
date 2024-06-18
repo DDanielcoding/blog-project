@@ -29,7 +29,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"email": "test1234@example
 ## To Create a New blog_entry:
 
 ```bash
-curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer <AUTH_TOKEN_HERE>" -d '{"username": "testuser2", "title": "Blog post by testuser2", "content": "This is my first blog post", "author_id": 2}' http://localhost:8080/blog_entries
+curl -X POST -H "Content-Type: application/json" -d '{"username": "testuser2", "title": "Blog post by testuser2", "content": "This is my first blog post", "author_id": 2}' http://localhost:8080/blog_entries
 ```
 ```JSON
 {
@@ -44,7 +44,7 @@ curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer <AUTH
 ```
 ## To Create a new comment on a specific blog entry id:
 ```bash
-curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer <AUTH_TOKEN_HERE>" -d '{"content": "Test comment", "username": "testuser2", "author_id": 2, "blog_id":2 }' http://localhost:8080/blog_entries/2/comments
+curl -X POST -H "Content-Type: application/json" -d '{"content": "Test comment", "username": "testuser2", "author_id": 2, "blog_id":2 }' http://localhost:8080/blog_entries/2/comments
 ```
 ```JSON
 {
