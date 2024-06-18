@@ -44,7 +44,7 @@ curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer <AUTH
 ```
 ## To Create a new comment on a specific blog entry id:
 ```bash
-curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE3MTg3NDE1MzZ9.6VA5r1C-fdo15tfeFEY3rS4S1t9OpJfQ7CpDgQq1XuA" -d '{"content": "Test comment", "username": "testuser2", "author_id": 2, "blog_id":2 }' http://localhost:8080/blog_entries/2/comments
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer <AUTH_TOKEN_HERE>" -d '{"content": "Test comment", "username": "testuser2", "author_id": 2, "blog_id":2 }' http://localhost:8080/blog_entries/2/comments
 ```
 ```JSON
 {
