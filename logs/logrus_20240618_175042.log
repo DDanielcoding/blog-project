@@ -1,0 +1,3 @@
+[36mINFO[0m[2024-06-18T17:50:42+02:00]/home/ddaniel/blog-project/db/connection.go:21 blog-project/db.Connect() Database connected successfully!             
+[36mINFO[0m[2024-06-18T17:50:42+02:00]/home/ddaniel/blog-project/db/connection.go:28 blog-project/db.Connect() Database migration completed successfully    
+[36mINFO[0m[2024-06-18T17:51:30+02:00]/home/ddaniel/blog-project/handlers/comment.go:71 blog-project/handlers.GetAllComments() Retrieved all comments: [{1  1 1 Test comment 2024-06-16 21:07:36.908683329 +0200 +0200} {2  0 0 This is a test comment by testuser 2024-06-16 21:10:35.529908406 +0200 +0200} {3 testuser2 2 2 Test comment 2024-06-17 22:29:16.739505606 +0200 +0200}] 

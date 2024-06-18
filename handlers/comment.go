@@ -58,3 +58,16 @@ func GetCommentsByBlogID(c *gin.Context) {
 	logrus.Infof("Comments retrieved successfully for blog entry ID: %s", blogID)
 	c.JSON(http.StatusOK, comments)
 }
+
+// GetAllComments retrieves all comments
+func GetAllComments(c *gin.Context) {
+	var comments []models.Comment
+	if err := db.DB.Find(&comments).Error; err != nil {
+		logrus.Errorf("Failed to fetch comments: %v", err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to fetch comments"})
+		return
+	}
+
+	logrus.Infof("Retrieved all comments: %v", comments)
+	c.JSON(http.StatusOK, comments)
+}
