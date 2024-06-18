@@ -57,8 +57,4 @@ curl -X POST -H "Content-Type: application/json" -d '{"content": "Test comment",
   "updated_at": "2024-06-17T22:17:40.830339957+02:00"
 }
 ```
-## To Access all blog entries:
-```http
-http://localhost:8080/blog_entries
-```
 
