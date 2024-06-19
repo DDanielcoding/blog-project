@@ -1,4 +1,14 @@
-To build and run the application:
+## To clone the repository:
+
+git clone https://github.com/DDanielcoding/blog-project.git
+cd blog-project
+
+## To install dependencies:
+
+go mod tidy
+
+
+## To build and run the application:
 
 go run main.go
 
