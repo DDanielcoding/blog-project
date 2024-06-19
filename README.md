@@ -1,6 +1,7 @@
 ## To clone the repository:
 
 git clone https://github.com/DDanielcoding/blog-project.git
+
 cd blog-project
 
 ## To install dependencies:
